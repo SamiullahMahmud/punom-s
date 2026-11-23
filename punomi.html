@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Punomi Apa ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #190b32, #63245f, #c45b91);
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Main birthday section */
+.container {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: clamp(38px, 8vw, 65px);
+    color: #ffd5e8;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff8fbd;
+    }
+    to {
+        text-shadow: 0 0 30px #ffb6d5, 0 0 50px #ff4f91;
+    }
+}
+
+.subtitle {
+    font-size: 22px;
+    margin: 20px;
+    color: #ffe4f0;
+}
+
+.intro {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #ffe4f0;
+}
+
+/* Gift animation */
+.gift {
+    font-size: 90px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    margin: 30px;
+    transition: .4s;
+}
+
+.gift:hover {
+    transform: scale(1.2);
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    border: 2px solid #ffd5e8;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #e84393, #a83ab8);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 15px;
+    transition: .3s;
+}
+
+button:hover {
+    background: #ff78b5;
+    transform: scale(1.08);
+}
+
+/* Gift message */
+.message {
+    display: none;
+    max-width: 500px;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 20px;
+    background: #ffffff20;
+    border: 1px solid #ffc5df;
+    line-height: 1.8;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Photo Gallery */
+.gallery {
+    width: 100%;
+    max-width: 900px;
+    margin: 65px auto;
+    padding: 15px;
+}
+
+.gallery h2 {
+    color: #ffd5e8;
+    font-size: 32px;
+    margin-bottom: 12px;
+    text-shadow: 0 0 15px #ff80b5;
+}
+
+.gallery-text {
+    margin-bottom: 30px;
+    color: #ffe1ed;
+    line-height: 1.7;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.photo-card {
+    width: 240px;
+    padding: 12px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid #ffb6d9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff70b5;
+    animation: photoFloat 3s ease-in-out infinite;
+    transition: transform .4s;
+}
+
+.photo-card:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.photo-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.photo-card:hover {
+    transform: scale(1.08);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.photo-card span {
+    display: block;
+    padding: 12px 0 5px;
+    color: #ffd5e8;
+    font-size: 17px;
+}
+
+@keyframes photoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Final birthday surprise */
+.final {
+    display: none;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 25px;
+    background: #ffffff18;
+    border: 2px solid #ffb6d9;
+    box-shadow: 0 0 30px #ff70b5;
+    line-height: 2;
+    animation: appear 1s ease;
+}
+
+.final h2 {
+    color: #ffd5e8;
+    margin: 15px 0;
+}
+
+.final-emoji {
+    font-size: 55px;
+    margin: 20px;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -40px;
+    animation: float 7s linear infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 30px 10px;
+    color: #ffd5e8;
+    font-size: 14px;
+}
+
+@media(max-width: 600px) {
+    .photo-card {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    .gallery h2 {
+        font-size: 26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Birthday Welcome -->
+    <div style="font-size:65px;">🎂💗🎀</div>
+
+    <h1>Happy Birthday!</h1>
+
+    <div class="subtitle">
+        To My Beautiful Sister Punomi Apa ❤️
+    </div>
+
+    <p class="intro">
+        Today is a very special day because someone
+        wonderful was born! 🥰
+
+        <br><br>
+
+        I have prepared a little surprise for you.
+        Are you ready, Apa? 💝
+    </p>
+
+    <!-- Gift Box -->
+    <div class="gift" onclick="openGift()">
+        🎁
+    </div>
+
+    <button onclick="openGift()">
+        Open Your Surprise 💝
+    </button>
+
+    <!-- First Gift Message -->
+    <div class="message" id="message">
+        <h2>Dear Punomi Apa! 🌸</h2>
+
+        <p>
+            You are one of the most beautiful blessings
+            in my life. You make our family special.
+
+            May your life always be filled with happiness,
+            love, success and beautiful memories.
+
+            Keep smiling always! 💗
+        </p>
+
+        <h2>Love You Always! ❤️🥰</h2>
+
+        <div style="font-size:35px;">
+            🎂 🎀 💐 💖
+        </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <section class="gallery">
+
+        <h2>Our Beautiful Memories 💗</h2>
+
+        <p class="gallery-text">
+            Some special moments of a very special person 🌸
+        </p>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="picture/IMG_1226.jpeg" alt="Punomi photo 1">
+                <span>Beautiful Smile ❤️</span>
+            </div>
+
+            <div class="photo-card">
+                <img src="picture/IMG_1161.jpeg" alt="Punomi photo 2">
+                <span>Forever Special 💕</span>
+            </div>
+
+           
+
+
+        </div>
+
+    </section>
+
+    <!-- Final Surprise Button -->
+    <button onclick="finalSurprise()">
+        One Last Surprise 🎉
+    </button>
+
+    <!-- Final Birthday Message -->
+    <div class="final" id="final">
+
+        <div class="final-emoji">
+            💐🎂💖
+        </div>
+
+        <h1>Happy Birthday Punomi!</h1>
+
+        <h2>My Dearest Sister ❤️</h2>
+
+        <p>
+            You are more than just a sister.
+            You are a beautiful blessing in my life.
+
+            Thank you for being such a special part
+            of our family.
+
+            May every day of your life bring you
+            happiness, peace, success and endless smiles.
+
+            May all your dreams come true.
+
+            Never stop smiling, Apa! 🌸
+        </p>
+
+        <h2>
+            Lots of Love, Your Little Sibling! ❤️
+        </h2>
+
+        <div style="font-size:40px;">
+            🥰 💕 🫂 🎂 🎉 💐
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    Made with ❤️ Especially for Punomi Apa
+    <br>
+    A little gift filled with unlimited love 💗
+</footer>
+
+<script>
+
+/* Open Gift */
+function openGift() {
+
+    const message = document.getElementById("message");
+
+    message.style.display = "block";
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    createHearts();
+}
+
+/* Final Surprise */
+function finalSurprise() {
+
+    const finalMessage = document.getElementById("final");
+
+    finalMessage.style.display = "block";
+
+    finalMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    createHearts();
+}
+
+/* Floating Hearts */
+function createHearts() {
+
+    for (let i = 0; i < 35; i++) {
+
+        const heart = document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerHTML = [
+            "💗", "💕", "❤️", "✨", "🌸", "💖"
+        ][Math.floor(Math.random() * 6)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize =
+            (15 + Math.random() * 25) + "px";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 5) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 8000);
+    }
+}
+
+/* Automatic Floating Hearts */
+setInterval(() => {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = "💗";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = "20px";
+    heart.style.animationDuration = "7s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+
+}, 800);
+
+</script>
+
+</body>
+</html>
